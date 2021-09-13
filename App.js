@@ -6,8 +6,10 @@ import ListScreen from "./src/screens/ListScreen";
 import ImageScreen from "./src/screens/ImageScreen";
 import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/ColorScreen";
+import {StyleSheet} from 'react-native';
 
 const navigator = createStackNavigator(
+  
   {
     Home: HomeScreen,
     Components: ComponentsScreen,
@@ -22,6 +24,18 @@ const navigator = createStackNavigator(
       title: "App",
     },
   }
+  
 );
 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+})
+
+
 export default createAppContainer(navigator);
+
