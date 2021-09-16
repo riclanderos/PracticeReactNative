@@ -16,6 +16,7 @@ const HomeScreen = ({navigation}) => {
     <ImageBackground style={styles.bgImage}
       source={require('../../assets/truck-mountains.jpg')} resizeMode="cover">
     <View>
+      <Text>
       <Image style={[styles.logoImage, {tintColor: '#FF4500'}]}
       source={require('../../assets/balance-logo.png')} />
       <Button
@@ -41,6 +42,7 @@ const HomeScreen = ({navigation}) => {
       title="Go to Square Demo"
       onPress={() => navigation.navigate("Square")}
     />
+      </Text>
     </View>
     </ImageBackground>
   );
